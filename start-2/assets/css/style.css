@@ -204,6 +204,41 @@ footer a {
   main {
     font-size: 1.2em;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+    text-align: left;
+    padding: 0em 1.5em;
+  }
+
+  header div img {
+    width: 35%;
+    vertical-align: middle;
+    margin: 10px;
+    text-align: start;
+  }
+
+  header div,
+  header p {
+    display: inline-block;
+  }
+
+  header nav {
+    display: inline-block;
+    width: 45%;
+    margin: auto;
+    text-align: right;
+  }
+
+  table {
+    width: 70%;
+    margin-bottom: 6em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   h1 {
     font-size: 2.5em;
     font-weight: bold;
@@ -213,8 +248,6 @@ footer a {
     font-weight: bold;
   }
   table {
-    margin-left: 25%;
-    margin-right: 25%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
@@ -242,11 +275,70 @@ footer a {
 /* FINE MEDIUM */
 
 /* INIZIO DESKTOP */
-@media screen and (min-width: 1200) {
-  header nav {
-    float: right;
+@media screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    height: 60px;
+    padding-top: 1px;
+    justify-content: space-between;
   }
-  header img {
-    float: left;
+
+  header div {
+    display: flex;
   }
-}
+
+  header div img {
+    max-width: 150px;
+    padding: 0;
+    margin: 0;
+  }
+
+  iframe {
+    /* display: inline-block; */
+    width: 50%;
+    vertical-align: top;
+    height: 170px;
+  }
+
+  main section {
+    display: inline-block;
+    width: 47%;
+  }
+
+  section {
+    height: 170px;
+    width: 49%;
+    display: inline-block;
+    border-radius: 20px;
+    vertical-align: top;
+  }
+
+  section h2 {
+    background-color: rgb(145, 142, 142);
+  }
+
+  input {
+    width: 70%;
+  }
+
+  aside {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  aside div {
+    display: inline-block;
+    text-align: center;
+  }
+
+  footer {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  footer address {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+} /* FINE DESKTOP */
