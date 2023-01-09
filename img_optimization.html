@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Optimization</title>
+  </head>
+  <style>
+    #image {
+      width: 400px;
+      height: 400px;
+      background-image: url(https://placekitten.com/400);
+    }
+
+    @media screen and (min-width: 700px) {
+      #image {
+        width: 800px;
+        height: 800px;
+        background-image: url(https://placekitten.com/800);
+        /* NON verrà visualizzata nei mobile perchè lo schermo non rispetta la dimensione giusta */
+      }
+    }
+  </style>
+  <body>
+    <div id="image"></div>
+  </body>
+</html>
